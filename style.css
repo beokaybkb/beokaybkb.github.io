@@ -1,0 +1,165 @@
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #e21260;
+}
+
+/*global*/
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/*header*/
+header .topHeader {
+    height: 63px;
+    background-color: #e21260;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header .bottomHeader {
+    min-height: 75px;
+    background-color: black;
+    border-bottom: 2px solid #e21260;
+}
+
+header img {
+    float: left;
+    width: 164px;
+    height: 164px;
+    padding-top: 10px;
+}
+
+header nav {
+    float: right;
+    padding-top: 25px;
+}
+
+header li {
+    color: white;
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    color: #e21260;
+}
+
+/*showcase*/
+
+#showcase {
+    min-height: 30vw;
+    background: url("./assets/roman-kraft-156096-unsplash.jpg") no-repeat;
+    background-position: 50% 68%;
+    /* overflow:hidden; */
+}
+
+/* footer */
+
+footer {
+    background-color: #e21260;
+    min-height: 80px;
+    overflow: hidden;
+}
+
+footer .socialMedia {
+    padding-top: 25px;
+    padding-left: 42px;
+    margin-right: 50px;
+    float: left;
+}
+
+footer img {
+    width: 35px;
+    padding: 0 5px 0 5px;
+
+}
+
+footer .addressPhone {
+    text-transform: uppercase;
+    font-size: 15px;
+    float: left;
+    padding: 0px 20px 0px 20px;
+    font-weight: bold;
+
+}
+
+footer .addressSection {
+    padding-top: 35px;
+    float: right;
+    padding-right: 42px;
+
+}
+
+@media(max-width:1300px) {
+    footer .addressSection {
+        float: none;
+        padding-right: 50px;
+        padding-top: 20px;
+    }
+
+    footer .addressPhone {
+        float: right;
+        margin-bottom: 5px;
+    }
+
+    footer .socialMedia {
+        float: left;
+        padding-left: 50px;
+    }
+
+}
+
+@media(max-width:1087px) {
+    #showcase {
+        min-height: 40vh;
+    }
+
+    header img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    header .bottomHeader {
+        min-height: 180px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    header nav {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 135px;
+        text-align: center;
+        margin-bottom: 10px;
+        line-height: 250%;
+    }
+}
+
+@media(max-width:850px) {
+    footer .socialMedia {
+        float: none;
+        padding-left: 0px;
+        width: 145px;
+        margin: 0 auto;
+    }
+
+    footer .addressPhone {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
